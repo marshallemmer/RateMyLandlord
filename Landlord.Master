@@ -1,0 +1,80 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Landlord.Master.cs" Inherits="ApartmentApp.Apartment" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <script src="Scripts/jquery-3.4.1.slim.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="CustomStyleSheet.css" rel="stylesheet" />
+    
+    <title>MyApartment</title>
+
+    <%-- There will be no content header as the header or navbar will be shared across every page --%>
+    <%--<asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>--%>
+</head>
+
+    <%-- Enclose the entire body in a mycontainer --%>
+<body>
+    <form id="form1" runat="server">
+        <div class="container mycontainer">
+
+            <%-- Begin construction of the navbar --%>
+            <%-- It should be dark and have a icon button with the logo for home and point to product, about, profolio, team, and content us pages--%>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="#">Rate My Landlord</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <%-- Home Button --%>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="HomePage.aspx">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <%-- Product --%>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Product.aspx">Product</a>
+                        </li>
+                        <%-- About --%>
+                        <li class="nav-item">
+                            <a class="nav-link" href="AboutUs.aspx">About</a>
+                        </li>
+                        <%-- Profolio --%>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Profolio.aspx">Profolio</a>
+                        </li>
+                        <%-- Team --%>
+                        <li class="nav-item">
+                            <a class="nav-link" href="OurTeam.aspx">Our Team</a>
+                        </li>
+                        <%-- Contact Us --%>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ContactUs.aspx">Contact Us</a>
+                        </li>
+                        <%-- Login --%>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Login.aspx">Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+
+            
+            <%-- MainDisplay will hold the content of the different pages in the system. Buttons above and below will change what content is shown in here --%>
+            <div>
+                <asp:ContentPlaceHolder ID="MainDisplay" runat="server">
+                    <h1>Debug: This is the default main display text. If you see this then the master page's default hasnt been overridden with a content page yet. I dont know what is wrong but you messed SOMETHING up big time.</h1>
+                    <h1>
+                        This is a change
+                    </h1>
+                </asp:ContentPlaceHolder>
+            </div>
+
+        </div>
+    </form>
+</body>
+</html>
