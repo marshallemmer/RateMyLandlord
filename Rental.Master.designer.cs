@@ -10,69 +10,69 @@
 namespace ApartmentApp {
     
     
-    public partial class WebForm7 {
+    public partial class Apartment {
         
         /// <summary>
-        /// txtLogUser control.
+        /// txtNavSearch control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtLogUser;
+        protected global::System.Web.UI.WebControls.TextBox txtNavSearch;
         
         /// <summary>
-        /// rfvLogUser control.
+        /// btnNavSubmit control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvLogUser;
+        protected global::System.Web.UI.WebControls.Button btnNavSubmit;
         
         /// <summary>
-        /// txtLogPass control.
+        /// btnNavLog control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtLogPass;
+        protected global::System.Web.UI.WebControls.Button btnNavLog;
         
         /// <summary>
-        /// rfvLogPass control.
+        /// btnNavRegister control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvLogPass;
+        protected global::System.Web.UI.WebControls.Button btnNavRegister;
         
         /// <summary>
-        /// lblLogDebug control.
+        /// btnNavPropReview control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblLogDebug;
+        protected global::System.Web.UI.WebControls.Button btnNavPropReview;
         
         /// <summary>
-        /// btnLogLogin control.
+        /// btnNavLLReview control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnLogLogin;
+        protected global::System.Web.UI.WebControls.Button btnNavLLReview;
         
         /// <summary>
-        /// btnLogClear control.
+        /// MainDisplay control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnLogClear;
+        protected global::System.Web.UI.WebControls.ContentPlaceHolder MainDisplay;
     }
 }

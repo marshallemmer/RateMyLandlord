@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Landlord.Master" AutoEventWireup="true" CodeBehind="Profolio.aspx.cs" Inherits="ApartmentApp.WebForm4" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Rental.Master" AutoEventWireup="true" CodeBehind="Profolio.aspx.cs" Inherits="ApartmentApp.WebForm4" %>
 
 <asp:Content ID="ProfolioContent" ContentPlaceHolderID="MainDisplay" runat="server">
     <h1>

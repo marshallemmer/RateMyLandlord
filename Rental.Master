@@ -1,0 +1,69 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Rental.Master.cs" Inherits="ApartmentApp.Apartment" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <script src="Scripts/jquery-3.4.1.slim.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <script src="Scripts/popper-utils.min.js"></script>
+    <link href="CustomStyleSheet.css" rel="stylesheet" />
+    
+    <title>MyApartment</title>
+
+    <%-- There will be no content header as the header or navbar will be shared across every page --%>
+    <%--<asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>--%>
+</head>
+
+<%-- Enclose the entire body in a mycontainer --%>
+<body>
+    <form runat="server">
+        <div class="container mycontainer">
+
+
+            <%-- Navbar Take 2 Search Bar Edition --%>
+            <%-- This Navbar will be on the top of the screen and have a search field and a login --%>
+            <%-- This navbar is primarilly so people can search wherever they are in the site --%>
+            <%-- The Logout button will ONLY be seeable while the user is logged in --%>
+            <%-- btnNavLogAccount  --%>
+            <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+                <a class="navbar-brand" href="HomePage.aspx">Rate My Rental</a>
+                <%--<form class="form-inline runat=server" action="/action_page.php">--%>
+                <%--<input class="form-control mr-sm-2" type="text" placeholder="Search" id="txtNavSearch">--%>
+                <asp:TextBox ID="txtNavSearch" CssClass="mr-sm-2 form-control" runat="server"></asp:TextBox>
+                <%--<button class="btn btn-success mr-sm-2" type="submit" CausesValidation="False" id="btnNavSubmit">Search</button>--%>
+                <asp:Button ID="btnNavSubmit" CssClass="btn btn-success mr-sm-2" runat="server" Text="Search" CausesValidation="False" OnClick="btnNavSubmit_Click" />
+                <asp:Button ID="btnNavLog" CssClass=" btn btn-primary mr-sm-2 form" runat="server" Text="Login" OnClick="btnNavLog_Click" CausesValidation="False" />
+                <asp:Button ID="btnNavRegister" CssClass="btn btn-primary mr-sm-2" runat="server" Text="Register" OnClick="btnNavRegister_Click" CausesValidation="False" />
+                <asp:Button ID="btnNavPropReview" CssClass="btn btn-primary mr-sm-2" runat="server" Text="Review a Property" Visible ="false" CausesValidation="False" OnClick="btnNavPropReview_Click" />
+                <asp:Button ID="btnNavLLReview" CssClass="btn btn-primary mr-sm-2" runat="server" Text="Review a Landlord" Visible ="false" CausesValidation="False" OnClick="btnNavLLReview_Click" />
+            </nav>
+
+            
+
+            
+            <%-- MainDisplay will hold the content of the different pages in the system. Buttons above and below will change what content is shown in here --%>
+            <div>
+                <asp:ContentPlaceHolder ID="MainDisplay" runat="server">
+                    <h1>Debug: This is the default main display text. If you see this then the master page's default hasnt been overridden with a content page yet. 
+                        I dont know what is wrong but you messed SOMETHING up big time.</h1>
+                    <h2>I hate my life</h2>
+                
+                </asp:ContentPlaceHolder>
+            </div>
+
+   
+          
+          
+          
+
+
+
+
+    
+        </div>
+    </form>
+</body>
+</html>

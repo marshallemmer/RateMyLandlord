@@ -10,69 +10,78 @@
 namespace ApartmentApp {
     
     
-    public partial class WebForm7 {
+    public partial class WebForm14 {
         
         /// <summary>
-        /// txtLogUser control.
+        /// lblLandBanner control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtLogUser;
+        protected global::System.Web.UI.WebControls.Label lblLandBanner;
         
         /// <summary>
-        /// rfvLogUser control.
+        /// lblAvgReview control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvLogUser;
+        protected global::System.Web.UI.WebControls.Label lblAvgReview;
         
         /// <summary>
-        /// txtLogPass control.
+        /// lblLR5Star control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtLogPass;
+        protected global::System.Web.UI.WebControls.Label lblLR5Star;
         
         /// <summary>
-        /// rfvLogPass control.
+        /// lblLR4Star control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvLogPass;
+        protected global::System.Web.UI.WebControls.Label lblLR4Star;
         
         /// <summary>
-        /// lblLogDebug control.
+        /// lblLR3Star control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblLogDebug;
+        protected global::System.Web.UI.WebControls.Label lblLR3Star;
         
         /// <summary>
-        /// btnLogLogin control.
+        /// lblLR2Star control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnLogLogin;
+        protected global::System.Web.UI.WebControls.Label lblLR2Star;
         
         /// <summary>
-        /// btnLogClear control.
+        /// lblLR1Star control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnLogClear;
+        protected global::System.Web.UI.WebControls.Label lblLR1Star;
+        
+        /// <summary>
+        /// gvLandReviews control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView gvLandReviews;
     }
 }
